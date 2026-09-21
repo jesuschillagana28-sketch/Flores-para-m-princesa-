@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi princesa 🩷</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;min-height:100%;overflow-x:hidden;font-family:"Segoe UI",sans-serif}
+body{background:radial-gradient(circle at 50% 25%,#25245c 0%,transparent 35%),linear-gradient(#030314,#0c0a2b 55%,#170b25);color:white}
+#stars{position:fixed;inset:0;z-index:0;pointer-events:none}
+.star{position:absolute;background:white;border-radius:50%;box-shadow:0 0 8px white;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{from{opacity:.2;transform:scale(.6)}to{opacity:1;transform:scale(1.3)}}
+#intro{position:fixed;inset:0;z-index:20;display:flex;justify-content:center;align-items:center;text-align:center;background:radial-gradient(circle,#211d52,#050514 70%);transition:opacity 1s,visibility 1s}
+#intro.hide{opacity:0;visibility:hidden}
+.intro-content{padding:25px}
+.intro-content h1{font-size:clamp(30px,8vw,55px);color:#ffe477;text-shadow:0 0 20px #ffd83d}
+.envelope{font-size:110px;cursor:pointer;animation:envelopeFloat 2s infinite ease-in-out;filter:drop-shadow(0 0 20px #ffcf42)}
+@keyframes envelopeFloat{50%{transform:translateY(-15px) rotate(2deg)}}
+.open-text{margin-top:20px;font-size:18px;color:#ffdce9}
+#main{position:relative;z-index:2;min-height:100vh;padding:70px 18px;text-align:center}
+.card{max-width:850px;margin:auto;padding:35px 22px;border-radius:30px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(8px);box-shadow:0 0 60px rgba(255,210,60,.12)}
+.moon{font-size:65px;animation:moonFloat 4s infinite ease-in-out}
+@keyframes moonFloat{50%{transform:translateY(-10px)}}
+h2{font-size:clamp(35px,8vw,65px);margin:10px 0;color:#ffe477;text-shadow:0 0 18px #ffdb43}
+.subtitle{font-size:20px;color:#ffdfe9}
+.flowers{margin:40px 0;min-height:110px;display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap}
+.flower{font-size:clamp(45px,10vw,75px);opacity:0;transform:translateY(60px) scale(.3);animation:flowerAppear 1s forwards;filter:drop-shadow(0 0 12px rgba(255,220,50,.65))}
+.flower:nth-child(1){animation-delay:.4s}.flower:nth-child(2){animation-delay:.7s}.flower:nth-child(3){animation-delay:1s}.flower:nth-child(4){animation-delay:1.3s}.flower:nth-child(5){animation-delay:1.6s}.flower:nth-child(6){animation-delay:1.9s}.flower:nth-child(7){animation-delay:2.2s}
+@keyframes flowerAppear{to{opacity:1;transform:translateY(0) scale(1)}}
+.message{margin:30px auto;max-width:720px;font-size:clamp(19px,4vw,27px);line-height:1.7}
+.princess{color:#ff9fc9;font-weight:bold;text-shadow:0 0 15px #ff69a8}
+.big-heart{font-size:55px;animation:heartbeat 1.3s infinite}
+@keyframes heartbeat{50%{transform:scale(1.2)}}
+.note{margin-top:30px;padding:24px;border-radius:22px;background:rgba(255,213,68,.08);border:1px solid rgba(255,221,110,.25);line-height:1.8;font-size:17px}
+.heart{position:fixed;bottom:-50px;z-index:10;pointer-events:none;animation:heartUp linear forwards}
+@keyframes heartUp{0%{transform:translateY(0) scale(.5);opacity:0}15%{opacity:1}100%{transform:translateY(-110vh) scale(1.4) rotate(20deg);opacity:0}}
+.love-button{margin-top:30px;padding:14px 28px;border:none;border-radius:50px;font-size:18px;color:white;background:linear-gradient(135deg,#ff7eb3,#ff4f91);box-shadow:0 0 20px rgba(255,100,160,.5);cursor:pointer;transition:transform .2s}
+.love-button:hover{transform:scale(1.08)}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+
+<section id="intro">
+  <div class="intro-content">
+    <div class="envelope" onclick="openLetter()">💌</div>
+    <h1>Hay algo para ti... 🥺🩷</h1>
+    <div class="open-text">Toca la carta para abrirla ✨</div>
+  </div>
+</section>
+
+<main id="main">
+  <div class="card">
+    <div class="moon">🌙✨</div>
+    <h2>Para mi princesa 🩷</h2>
+    <div class="subtitle">Un pequeño universo hecho especialmente para ti 🌌</div>
+
+    <div class="flowers">
+      <div class="flower">🌹</div><div class="flower">🌷</div>
+      <div class="flower">🌹</div><div class="flower">🌷</div>
+      <div class="flower">🌹</div><div class="flower">🌷</div>
+      <div class="flower">🌹</div>
+    </div>
+
+    <div class="message">
+      Hoy quería regalarte flores amarillas... 💛🌷🌹
+      <br><br>
+      Pero pensé que unas flores no eran suficientes para decirte todo lo que siento.
+      <br><br>
+      Así que hice este pequeño lugar, lleno de estrellas, flores y mucho cariño,
+      solamente para ti. ✨
+      <br><br>
+      Porque te quiero muchísimo, y eres una persona demasiado especial para mí.
+      <br><br>
+      <span class="princess">Te quiero mucho, mi princesa 🩷🥺🫶</span>
+    </div>
+
+    <div class="big-heart">💗</div>
+
+    <div class="note">
+      🌷💛 <strong>Feliz día de las flores amarillas</strong> 💛🌷
+      <br><br>
+      Ojalá estas flores puedan transmitirte aunque sea un poquito de todo el cariño que tengo por ti.
+      <br><br>
+      Si pudiera llenar el cielo de flores amarillas, lo llenaría solamente para que tú pudieras verlas. 🌌🌹🌷
+      <br><br>
+      Y si alguna vez miras las estrellas, recuerda que en algún lugar hay alguien que te quiere muchísimo. 🥺🩷
+    </div>
+
+    <button class="love-button" onclick="sendHearts()">Un último regalito 🥺💗</button>
+  </div>
+</main>
+
+<script>
+const stars=document.getElementById("stars");
+for(let i=0;i<160;i++){
+  const star=document.createElement("div");
+  star.className="star";
+  const size=Math.random()*3+1;
+  star.style.width=size+"px";
+  star.style.height=size+"px";
+  star.style.left=Math.random()*100+"%";
+  star.style.top=Math.random()*100+"%";
+  star.style.animationDelay=Math.random()*3+"s";
+  stars.appendChild(star);
+}
+function openLetter(){
+  document.getElementById("intro").classList.add("hide");
+  setTimeout(sendHearts,900);
+}
+function sendHearts(){
+  const emojis=["🩷","💗","💖","💕","✨","💛"];
+  for(let i=0;i<25;i++){
+    const heart=document.createElement("div");
+    heart.className="heart";
+    heart.innerText=emojis[Math.floor(Math.random()*emojis.length)];
+    heart.style.left=Math.random()*100+"%";
+    heart.style.fontSize=(Math.random()*20+15)+"px";
+    heart.style.animationDuration=(Math.random()*4+4)+"s";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),8000);
+  }
+}
+</script>
+</body>
+</html>
