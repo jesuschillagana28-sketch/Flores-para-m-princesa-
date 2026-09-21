@@ -88,7 +88,7 @@ h2{font-size:clamp(35px,8vw,65px);margin:10px 0;color:#ffe477;text-shadow:0 0 18
       Y si alguna vez miras las estrellas, recuerda que en algún lugar hay alguien que te quiere muchísimo. 🥺🩷
     </div>
 
-    <button class="love-button" onclick="sendHearts()">Un último regalito 🥺💗</button>
+    <button class="love-button" onclick="sendHearts()">Un último regalito 🥺🩷</button>
   </div>
 </main>
 
@@ -110,7 +110,7 @@ function openLetter(){
   setTimeout(sendHearts,900);
 }
 function sendHearts(){
-  const emojis=["🩷","🩷","🩷","🥹","🫶","🩷"];
+  const emojis=["🩷","🩷","🥺","🥹","🫶","🩷"];
   for(let i=0;i<25;i++){
     const heart=document.createElement("div");
     heart.className="heart";
